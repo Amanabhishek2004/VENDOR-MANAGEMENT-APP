@@ -45,6 +45,11 @@ data = {
 response = requests.patch("http://127.0.0.1:8000/api/orders/355909d0-9840-4640-a01c-d71e76e1f8ad" , data = data , headers=headers)
 
 
+
+#  FOR ACKNOWLEDGING THE ENDPOINTS
+
+response = requests.get("http://127.0.0.1:8000/api/orders/355909d0-9840-4640-a01c-d71e76e1f8ad/acknowledge" , data = data , headers=headers)
+
 '''
 CRUD FOR VENDORS
 '''
@@ -71,4 +76,9 @@ data =  { "name": "HARSH RAJ"
 response = requests.patch('http://127.0.0.1:8000/api/vendors/a4693949-19ac-40e7-9a8b-55f05a8779ed' , data=data , headers=headers)
 
 
+
+#  seeing the metrics
+
+
+response = requests.patch('http://127.0.0.1:8000/api/performance/a4693949-19ac-40e7-9a8b-55f05a8779ed' , data=data , headers=headers)
 
