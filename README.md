@@ -7,7 +7,7 @@ then open the vendor_managent_app folder with terminal then ------ python manage
 to view the data base ------ http://127.0.0.1:8000/admin/
 
 username ---- aman
-passsword ---- aman
+passsword ---- AMAN
 
 all the routes test are there in the test.py file in the directory you can print whichever you want 
 
